@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00632d84-209a-4854-b240-a0a257f57b47}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>Gruntfile.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ToolsVersionPromptShown>1.7</ToolsVersionPromptShown>
+    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="bower.json" />
+    <Content Include="build\adapter.js.map" />
+    <Content Include="build\collection.js.map" />
+    <Content Include="build\container.js.map" />
+    <Content Include="build\controller.js.map" />
+    <Content Include="build\eventsManager.js.map" />
+    <Content Include="build\model.js.map" />
+    <Content Include="build\ribs.js.map" />
+    <Content Include="build\router.js.map" />
+    <Content Include="build\view.js.map" />
+    <Content Include="build\viewHelper.js.map" />
+    <Content Include="LICENSE" />
+    <Content Include="package.json" />
+    <Content Include="documentation.md" />
+    <Content Include="README.md" />
+    <Compile Include="build\adapter.js" />
+    <Compile Include="build\collection.js" />
+    <Compile Include="build\container.js" />
+    <Compile Include="build\controller.js" />
+    <Compile Include="build\eventsManager.js" />
+    <Compile Include="build\model.js" />
+    <Compile Include="build\ribs.js" />
+    <Compile Include="build\router.js" />
+    <Compile Include="build\view.js" />
+    <Compile Include="build\viewHelper.js" />
+    <Compile Include="Gruntfile.js" />
+    <Content Include="scripts\typings\jquery\jquery-tests.ts.tscparams" />
+    <Content Include="scripts\typings\underscore\underscore-tests.ts.tscparams" />
+    <TypeScriptCompile Include="scripts\typings\backbone\backbone-tests.ts" />
+    <TypeScriptCompile Include="scripts\typings\backbone\backbone.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\es6-promise\es6-promise-commonjs-tests.ts" />
+    <TypeScriptCompile Include="scripts\typings\es6-promise\es6-promise-tests.ts" />
+    <TypeScriptCompile Include="scripts\typings\es6-promise\es6-promise.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\fspromise\fspromise.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery-tests.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\ribs\ribsjs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\underscore\underscore-tests.ts" />
+    <TypeScriptCompile Include="scripts\typings\underscore\underscore.d.ts" />
+    <TypeScriptCompile Include="source\adapter.ts" />
+    <TypeScriptCompile Include="source\collection.ts" />
+    <TypeScriptCompile Include="source\container.ts" />
+    <TypeScriptCompile Include="source\controller.ts" />
+    <TypeScriptCompile Include="source\eventsManager.ts" />
+    <TypeScriptCompile Include="source\model.ts" />
+    <TypeScriptCompile Include="source\ribs.ts" />
+    <TypeScriptCompile Include="source\router.ts" />
+    <TypeScriptCompile Include="source\view.ts" />
+    <TypeScriptCompile Include="source\viewHelper.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build" />
+    <Folder Include="scripts\typings\" />
+    <Folder Include="scripts\typings\backbone\" />
+    <Folder Include="scripts\typings\es6-promise\" />
+    <Folder Include="scripts\typings\fspromise\" />
+    <Folder Include="scripts\typings\jquery\" />
+    <Folder Include="scripts\typings\ribs\" />
+    <Folder Include="scripts\typings\underscore\" />
+    <Folder Include="source\" />
+    <Folder Include="scripts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptOutDir>build</TypeScriptOutDir>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
